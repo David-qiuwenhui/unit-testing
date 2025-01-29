@@ -1,0 +1,14 @@
+{
+  "name": "mini-test-runner",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "license": "MIT",
+  "devDependencies": {
+    "vitest": "^3.0.4"
+  },
+  "dependencies": {
+    "esbuild": "^0.24.2",
+    "glob": "9.3.2"
+  }
+}
