@@ -1,0 +1,14 @@
+{
+  "name": "vitest-vite",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "vite build",
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "vite": "^6.0.11",
+    "vitest": "^3.0.4"
+  }
+}
