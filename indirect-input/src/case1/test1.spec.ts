@@ -1,6 +1,6 @@
 import { it, expect, describe, vi, beforeEach } from "vitest";
-import { fetchUserAge, userAge } from "../src/case1/user";
-import { doubleUserAge } from "../src/case1/index";
+import { fetchUserAge, userAge } from "./user";
+import { doubleUserAge } from "./index";
 
 // describe("happy path", () => {
 //   it("add", () => {
@@ -10,14 +10,14 @@ import { doubleUserAge } from "../src/case1/index";
 
 // mock 全局mock
 // stub
-// vi.mock("../src/case1/user", () => {
+// vi.mock("./user", () => {
 //   return {
 //     userAge: () => 8,
 //   };
 // });
 
 // mock2: 局部mock
-// vi.mock("../src/case1/user");
+// vi.mock("./user");
 
 // describe("doubleUserAge", () => {
 //   it("should double user age", () => {
@@ -34,7 +34,7 @@ describe("doubleUserAge", () => {
   beforeEach(() => {
     // vi.doMock 只有在import的时候才会生效
     // 且只会在作用域内生效
-    vi.doMock("../src/case1/user", () => {
+    vi.doMock("./user", () => {
       return {
         userAge: () => 9,
       };
@@ -42,14 +42,14 @@ describe("doubleUserAge", () => {
   });
 
   it("should double user age", async () => {
-    const { doubleUserAge } = await import("../src/case1/index");
+    const { doubleUserAge } = await import("./index");
     const result = doubleUserAge();
     expect(result).toBe(18);
   });
 });
 
 // mock4: 异步mock
-vi.mock("../src/case1/user", () => {
+vi.mock("./user", () => {
   return {
     fetchUserAge: () => {
       return Promise.resolve(28);
