@@ -12,3 +12,5 @@ export function fetchUserAge(): Promise<number> {
     }, 0);
   });
 }
+
+export function returnConfigUserAge(argument) {}
