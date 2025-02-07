@@ -1,0 +1,14 @@
+{
+  "name": "browser-env",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "happy-dom": "^17.0.0",
+    "vitest": "^3.0.5"
+  }
+}
