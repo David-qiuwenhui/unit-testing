@@ -8,6 +8,7 @@
     "test": "vitest run"
   },
   "devDependencies": {
+    "happy-dom": "^17.0.0",
     "vitest": "^3.0.5"
   }
 }

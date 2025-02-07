@@ -8,7 +8,6 @@ export function increaseCount(flag = "") {
     throw new Error("increase count is fail");
   }
 }
-
 export function getCount() {
   return Number(localStorage.getItem("count"));
 }
